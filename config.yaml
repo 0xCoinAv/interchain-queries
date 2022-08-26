@@ -1,0 +1,33 @@
+default_chain: stride-testnet
+chains:
+  gaia-testnet:
+    key: KaiserSoeze                                      #Your Wallet Name #If you entered the code as "wallet" while recovering the wallet, enter it as "wallet" here as well.
+    chain-id: GAIA
+    rpc-addr: http://157.230.105.130:23657                #Your GAIA RPC Addr (Your IP+Port)
+    grpc-addr: http://157.230.105.130:23090               #Your GAIA GRPC Addr (Your IP+Port)
+    account-prefix: cosmos
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001uatom
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+  stride-testnet:
+    key: KaiserSoeze                                      #Your Wallet Name #If you entered the code as "wallet" while recovering the wallet, enter it as "wallet" here as well.
+    chain-id: STRIDE-TESTNET-4
+    rpc-addr: http://157.230.105.130:16657                #Your Stride RPC Addr (Your IP+Port)
+    grpc-addr: http://http://157.230.105.130:16090        #Your Stride GRPC Addr (Your IP+Port)
+    account-prefix: stride
+    keyring-backend: test
+    gas-adjustment: 1.2
+    gas-prices: 0.001ustrd
+    key-directory: /root/.icq/keys
+    debug: false
+    timeout: 20s
+    block-timeout: ""
+    output-format: json
+    sign-mode: direct
+cl: {}
